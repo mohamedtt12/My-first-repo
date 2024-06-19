@@ -1,0 +1,3 @@
+find -name "*~" -exec ls  {} + -exec rm {} + -o -name "#*#" -exec ls {} + -exec rm {} +
+find . -type f \( -name "#*#" -o -name "*~" \) -print -delete
+
